@@ -1,0 +1,42 @@
+<div *ngIf="selectedStagiaire" id="content">
+  <h1>{{selectedStagiaire.firstname}} {{selectedStagiaire.lastname}}</h1>
+  <p id="birthday">{{selectedStagiaire.birthdate | date:'dd/MM/yyyy'}}</p>
+  <img src="{{selectedStagiaire.image}}">
+
+
+
+
+
+  <hr>
+
+  <h3>Qualités et défauts :</h3>
+  <ol>
+    <li *ngFor="let quality of selectedStagiaire.qualities">
+      <p>{{quality.content}}</p>
+    </li>
+  </ol>
+
+
+  <hr>
+
+  <form [formGroup]="commentForm" (ngSubmit)="submit()">
+    <select formControlName="author" placeholder="Votre prénom">
+      <option *ngFor="let stagiaire of stagiaires">{{stagiaire.firstname}}</option>
+    </select>
+    <textarea formControlName="content" placeholder="Votre commentaire" rows="15"></textarea>
+    <button [disabled]="!commentForm.valid">Envoyer</button>
+  </form>
+
+
+  <div id="comments" *ngIf="selectedStagiaire.comments.length > 0">
+    <ul>
+      <li *ngFor="let comment of comments">
+        <p id="com">Commentaire de {{comment.author}} posté le {{comment.creationDate | date :'dd/MM/yyyy'}}
+          à {{comment.creationDate | date :'HH:mm'}} : </p>
+        <p id="body">"{{comment.content}}"</p>
+      </li>
+    </ul>
+  </div>
+
+
+</div>

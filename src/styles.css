@@ -1,1 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://cdn.discordapp.com/attachments/1005017845928824913/1087398782796304385/Benja_a_sinister_landscape_filled_with_sick_rabbits_protesting__432a75dd-f4cb-4631-b220-cd51ad80d654.png");
+}

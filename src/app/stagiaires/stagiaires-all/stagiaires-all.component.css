@@ -1,0 +1,44 @@
+h2{
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+#list{
+  background-color: gold;
+  padding: 1%;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#list:hover{
+  border: 3px solid white;
+}
+
+li img{
+  height: 300px;
+  border-radius: 10px;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  color: gold;
+  font-family: 'DotGothic16', sans-serif;
+  font-size: 4em;
+}
+
+#content{
+  background-color: goldenrod;
+  padding: 10px;
+  border-radius: 10px;
+}

@@ -1,0 +1,104 @@
+#content{
+  color: white;
+  opacity: 95%;
+  border-radius: 50px;
+  background-color: grey;
+  max-width: 50%;
+  margin: auto;
+  padding-bottom: 50px;
+
+}
+
+#content h1{
+  display: flex;
+  justify-content: center;
+  font-size: 4em;
+  color: gold;
+  padding-top: 50px;
+}
+
+
+
+img{
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+
+#birthday{
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+}
+
+h3{
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+
+ol{
+  width: 30%;
+  margin: auto;
+  font-size: 1.3em;
+}
+
+
+
+form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+form select{
+  width: 40%;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+form textarea{
+  font-size: 1.2em;
+}
+
+form button{
+  margin-top: 10px;
+  width: fit-content;
+  font-size: 1.2em;
+}
+
+#comments{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+#comments ul{
+  list-style-type: none;
+}
+
+#comments li{
+  border: 1px solid white;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
+
+#com{
+  text-decoration: underline;
+  font-size: 1.2em;
+}
+
+#body{
+  font-size: 1.2em;
+}
+
+hr{
+  width: 90%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}

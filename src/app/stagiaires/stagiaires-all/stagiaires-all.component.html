@@ -1,0 +1,13 @@
+<h1>Les stagiaires :</h1>
+<ul>
+  <li id="list" *ngFor="let stagiaire of stagiaires">
+    <a [routerLink]="['./',stagiaire.id]"><img src="{{stagiaire.image}}"></a>
+    <div id="content">
+      <h2>{{stagiaire.firstname}}</h2>
+     </div>
+  </li>
+</ul>
+
+
+
+
